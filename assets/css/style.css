@@ -17,8 +17,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: #f7f7f7;
-  font-family: "Poppins", sans-serif;
+  background: #ded3d3;
+  /*font-family: "Poppins", sans-serif;*/
 }
 
 *::selection {
@@ -46,7 +46,7 @@ html::-webkit-scrollbar-thumb {
   top: 0;
   left: 0;
   z-index: 10000;
-  background: #e6eff1;
+  background: #c1b9b9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,10 +87,14 @@ section {
   color: rgb(115, 3, 167);
 }
 header .logo {
-  font-size: 1.9rem;
-  font-weight: 800;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 2px;
   text-decoration: none;
   color: #0e2431;
+}
+header .logo img {
+  font-size: small;
 }
 header .logo i {
   font-size: 2.2rem;
@@ -212,9 +216,10 @@ header .navbar ul li a:hover {
   z-index: 1;
 }
 .home .image img {
-  width: 70%;
-  margin-left: 6rem;
-  border-radius: 50%;
+  width: 60%;
+  margin-left: 15rem;
+  border-radius: 47%;
+  margin-top: 5%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
@@ -289,7 +294,7 @@ header .navbar ul li a:hover {
   font-size: 2rem;
   display: inline-block;
   line-height: 44px;
-  color: #00d9ff;
+  color: #a6b6a4;
   background-color: #09011b;
   width: 44px;
   height: 44px;
@@ -382,7 +387,7 @@ header .navbar ul li a:hover {
 }
 .about .row .content .tag {
   font-size: 1.4rem;
-  color: #020133;
+  color: #130133;
   font-weight: 600;
   margin-top: 1rem;
 }
@@ -404,7 +409,7 @@ header .navbar ul li a:hover {
   text-transform: none;
 }
 .about .row .content .box-container .box p span {
-  color: #011aff;
+  color: #ff4901;
 }
 .resumebtn {
   margin-top: 6rem;
