@@ -12,7 +12,7 @@ Scroll Reveal,Font Awesome and JSON
 
 ## 📌Look  of Main Page  :
 ![outlook](https://github.com/user-attachments/assets/09f7bffb-d195-4284-8d57-bf55918b2b37)
-![outlook2](/deep-portfolio/assets/images/outlook2.png)
+![outlook2](https://github.com/user-attachments/assets/a24e69bb-c08b-4402-bcaf-88e895c3f6f9)
 
 ## Project Outcome :
 1. Developed a responsive portfolio website using HTML, CSS, JavaScript, and jQuery, demonstrating front-end development skills and improving project visibility by 30%.
