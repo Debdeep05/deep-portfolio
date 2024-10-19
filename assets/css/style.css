@@ -11,13 +11,21 @@
   text-transform: capitalize;
   transition: all 0.2s linear;
 }
+:root{
+  --primary-color: #c2e5e8;
+  --secondary-color: #fff;
+}
+.dark-theme{
+  --primary-color: #000106;
+  --secondary-color: #fff;
+}
 html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 body {
-  background: #ded3d3;
+  background: var(--primary-color);
   /*font-family: "Poppins", sans-serif;*/
 }
 
@@ -111,6 +119,11 @@ header .navbar ul {
 header .navbar li {
   margin-left: 2.5rem;
 }
+#dark-icon{
+  width: 30px;
+  cursor: pointer;
+  margin: 20px;
+}
 header .navbar ul li a {
   font-size: 1.57rem;
   color: #0e2431;
@@ -146,7 +159,7 @@ header .navbar ul li a:hover {
     height: 100%;
     text-align: left;
     align-items: flex-start;
-    background-color: #0e0f31;
+    background-color:var(--secondary-color);
   }
   header .navbar ul {
     flex-flow: column;
@@ -238,7 +251,7 @@ header .navbar ul li a:hover {
 }
 .home .content p {
   font-size: 2.5rem;
-  color: #000;
+  color: #0c7fc6;
   font-weight: 600;
   padding: 1rem 0;
 }
@@ -369,7 +382,7 @@ header .navbar ul li a:hover {
   width: 30rem;
   height: auto;
   border-radius: 5%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 10px rgba(136, 85, 85, 0.6);
   mix-blend-mode: luminosity;
   transition: 0.3s;
   cursor: pointer;
@@ -681,7 +694,7 @@ header .navbar ul li a:hover {
   position: absolute;
   top: 85%;
   left: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 222, 222, 0.9);
   display: flex;
   flex-direction: column;
 }
@@ -722,7 +735,7 @@ header .navbar ul li a:hover {
   padding: 1.5rem 2.5rem;
   border-radius: 0.5rem;
   font-size: 1.5rem;
-  color: #fff;
+  color: #edd0d0;
   background: rgb(12, 12, 12);
   margin-right: 2rem;
 }
