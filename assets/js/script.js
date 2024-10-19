@@ -39,9 +39,8 @@ $(document).ready(function () {
 
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
-
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
+        emailjs.init("ogtz3-0LZwzaDieLy");
+        emailjs.sendForm("service_d42war1", "template_thvjmeb", "#contact-form")
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
                 document.getElementById("contact-form").reset();
@@ -59,7 +58,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
+            document.title = "Portfolio | Debdeep Sarkar";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {
@@ -163,7 +162,7 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 
 
 // disable developer mode
-document.onkeydown = function (e) {
+/*document.onkeydown = function (e) {
     if (e.keyCode == 123) {
         return false;
     }
@@ -179,7 +178,7 @@ document.onkeydown = function (e) {
     if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
         return false;
     }
-}
+}*/
 /* ===== SCROLL REVEAL ANIMATION ===== */
 const srtop = ScrollReveal({
     origin: 'top',

@@ -21,11 +21,11 @@ document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
             document.title = "Projects | Portfolio  Debdeep Sarkar";
-            $("#favicon").attr("href", "/assets/images/favicon.png");
+            $("#favicon").attr("href", "");
         }
         else {
             document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "/assets/images/favhand.png");
+            $("#favicon").attr("href", "");
         }
     });
 
@@ -105,7 +105,7 @@ getProjects().then(data => {
 })
 // fetch projects end
 // disable developer mode
-document.onkeydown = function (e) {
+/*document.onkeydown = function (e) {
     if (e.keyCode == 123) {
         return false;
     }
@@ -121,4 +121,4 @@ document.onkeydown = function (e) {
     if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
         return false;
     }
-}
+}*/
