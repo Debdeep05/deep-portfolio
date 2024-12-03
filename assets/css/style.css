@@ -12,7 +12,8 @@
   transition: all 0.2s linear;
 }
 :root{
-  --primary-color: #c2e5e8;
+    --primary-color: #c2e5e8;  
+   /* --primary-color: #fff; */
   --secondary-color: #fff;
 }
 .dark-theme{
@@ -193,6 +194,21 @@ header .navbar ul li a:hover {
     right: 0;
   }
 }
+@media (max-width:360px)
+{
+  .home .image{
+    display: none;
+  }
+  .home .content{
+    margin-bottom: 100px;
+  }
+  .home .content p span{
+    display: inline-block;
+  }
+  .home .content p {
+    white-space: nowrap;
+  }
+  }
 /* hamburger icon ends */
 
 /* hero section starts*/
@@ -226,13 +242,13 @@ header .navbar ul li a:hover {
 }
 .home .image {
   flex: 1 1 40rem;
-  z-index: 1;
+  z-index: 0;
 }
 .home .image img {
-  width: 60%;
-  margin-left: 15rem;
+  width: 50%;
+  margin-left: 17rem;
   border-radius: 47%;
-  margin-top: 5%;
+  margin-top: 10%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
@@ -300,6 +316,7 @@ header .navbar ul li a:hover {
   list-style: none;
 }
 .socials .social-icons li {
+  margin-top: 15px;
   display: inline-block;
   margin-bottom: 14px;
 }
@@ -344,7 +361,7 @@ header .navbar ul li a:hover {
 /* hero media queries starts*/
 @media (max-width: 450px) {
   .home .btn {
-    margin: 4rem 0;
+    margin: 2rem 0;
   }
   .socials {
     margin-top: 12rem;
@@ -353,7 +370,7 @@ header .navbar ul li a:hover {
     margin-top: -12rem;
   }
   .home .content p {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .home .content p span {
     font-size: 2.2rem;
@@ -364,7 +381,8 @@ header .navbar ul li a:hover {
 
 /* about section starts */
 .about {
-  background: rgb(255, 255, 255);
+   background: rgb(255, 255, 255); 
+  /* background: var(--primary-color); */
 }
 .about .row {
   display: flex;
@@ -395,7 +413,7 @@ header .navbar ul li a:hover {
   padding: 3rem;
 }
 .about .row .content h3 {
-  color: rgb(27, 27, 27);
+  color: rgb(27, 27, 27); 
   font-size: 2.5rem;
 }
 .about .row .content .tag {
@@ -422,7 +440,7 @@ header .navbar ul li a:hover {
   text-transform: none;
 }
 .about .row .content .box-container .box p span {
-  color: #ff4901;
+   color: #ff4901; 
 }
 .resumebtn {
   margin-top: 6rem;
@@ -681,7 +699,7 @@ header .navbar ul li a:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  height: 30rem;
+  height: 35rem;
 }
 .work .box-container .box img {
   height: 100%;
@@ -721,7 +739,7 @@ header .navbar ul li a:hover {
   justify-content: center;
 }
 .work .desc p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .work .desc .btns {
   display: flex;
